@@ -6,16 +6,16 @@ public class KeyUnlock : MonoBehaviour
 {
     // door stuff
     public GameObject door;
-    public float speed = 2f;
+    private float speed = 4f;
     private float openHeight;
     public Transform startPos;
     private bool touched;
     // key stuff
     public KeyCollecter keys;
-    public bool keyGet;
+    private bool keyGet;
     private void Start()
     {
-        openHeight = startPos.position.y + startPos.localScale.y - 0.5f;
+        openHeight =startPos.position.y + startPos.localScale.y - 0.5f;
     }
     // Update is called once per frame
     void Update()
