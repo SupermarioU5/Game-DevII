@@ -28,22 +28,9 @@ public class DoorOpener : MonoBehaviour
             door.transform.position = Vector3.Lerp(door.transform.position, new Vector3(door.transform.position.x, close, door.transform.position.z), Time.deltaTime * speed);
         }
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        // Check if the object that collided with the button is the box
-        if (other.CompareTag("Object"))
-        {
-            // Check if the button is the one the script is attached to
-            if (this.CompareTag("Buttons"))
-            {
-                isOnButton = true; // Set flag to true when box is on button
-                Debug.Log("Box is on the button, door is opening!");
-            }
-        }
-    }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Object"))
+        if (other.CompareTag("Object")|| other.CompareTag("Player"))
         {
             isOnButton = false;
         }
