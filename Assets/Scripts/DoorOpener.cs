@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class DoorOpener : MonoBehaviour
 {
@@ -8,17 +9,18 @@ public class DoorOpener : MonoBehaviour
     private float close;
     private float openHeight;
 
-    private bool isOnButton = false;
+    private HashSet<GameObject> objectsOnButton = new HashSet<GameObject>(); // Track all objects on the button
+
     private void Start()
     {
         close = startPos.position.y;
-        openHeight= startPos.position.y + startPos.localScale.y -.5f;
+        openHeight = startPos.position.y + startPos.localScale.y - 0.5f;
     }
 
     void Update()
     {
-        // If the box is on the button, move the door upwards
-        if (isOnButton)
+        // If any object is on the button, move the door upwards
+        if (objectsOnButton.Count > 0)
         {
             // Move the door up over time to simulate opening
             door.transform.position = Vector3.Lerp(door.transform.position, new Vector3(door.transform.position.x, openHeight, door.transform.position.z), Time.deltaTime * speed);
@@ -28,23 +30,25 @@ public class DoorOpener : MonoBehaviour
             door.transform.position = Vector3.Lerp(door.transform.position, new Vector3(door.transform.position.x, close, door.transform.position.z), Time.deltaTime * speed);
         }
     }
+
     private void OnTriggerEnter(Collider other)
     {
-        // Check if the object that collided with the button is the box
-        if (other.CompareTag("Object")|| other.CompareTag("Player"))
+        // If the object that collided with the button is the box or player, add it to the list
+        if (other.CompareTag("Object") || other.CompareTag("Player"))
         {
-            // Check if the button is the one the script is attached to
             if (this.CompareTag("Buttons"))
             {
-                isOnButton = true; // Set flag to true when box is on button
+                objectsOnButton.Add(other.gameObject); // Add object to the set
             }
         }
     }
+
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Object")||other.CompareTag("Player"))
+        // If the object that left the button is the box or player, remove it from the list
+        if (other.CompareTag("Object") || other.CompareTag("Player"))
         {
-            isOnButton = false;
+            objectsOnButton.Remove(other.gameObject); // Remove object from the set
         }
-    }  
+    }
 }

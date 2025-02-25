@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ControlsMenu : MonoBehaviour
 {
+    public void Start()
+    {
+        Time.timeScale = 0f;
+    }
     public GameObject controls;
     private void Update()
     {
@@ -14,6 +18,7 @@ public class ControlsMenu : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        Time.timeScale = 1f;
         Destroy(controls);
     }
 }
