@@ -6,10 +6,12 @@ public class KeyUnlock : MonoBehaviour
 {
     // door stuff
     public GameObject door;
+    public Renderer doorR;
     private float speed = 4f;
     private float openHeight;
     public Transform startPos;
     private bool touched;
+    public Material mat1;
     // key stuff
     public KeyCollecter keys;
     private bool keyGet;
@@ -34,6 +36,7 @@ public class KeyUnlock : MonoBehaviour
         if (keyGet&&other.CompareTag("Player"))
         {
             touched = true;
+            doorR.material=mat1;
         }
     }
 }

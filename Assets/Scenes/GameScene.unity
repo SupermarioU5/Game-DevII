@@ -1987,7 +1987,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1478424811}
+  doorR: {fileID: 1478424814}
   startPos: {fileID: 1478424816}
+  mat1: {fileID: 2100000, guid: 68ea2b1c6a55b4d4ba3e1b6c47c8b51f, type: 2}
   keys: {fileID: 1855282257}
 --- !u!65 &1172400495
 BoxCollider:
@@ -4245,6 +4247,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 2030775803}
   - {fileID: 1581305226}
+  - {fileID: 1464626610}
   - {fileID: 2101986944}
   - {fileID: 963194228}
   - {fileID: 264472744}
@@ -4259,5 +4262,4 @@ SceneRoots:
   - {fileID: 1363878759}
   - {fileID: 788231627}
   - {fileID: 543450651844688801}
-  - {fileID: 1464626610}
   - {fileID: 571031655}

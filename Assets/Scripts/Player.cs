@@ -7,9 +7,9 @@ public class Player : MonoBehaviour
     public CharacterController controller;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
-    private float playerSpeed = 2.5f;
-    private float jumpHeight = 1.0f;  // Adjustable jump height
-    private float gravityValue = -9.81f; // Gravity for the player
+    public float playerSpeed = 2.5f;
+    public float jumpHeight = 1.0f;  // Adjustable jump height
+    public float gravityValue = -9.81f; // Gravity for the player
     public Transform cameraTransform; // Reference to the camera's transform for movement alignment
 
     private float jumpBufferTime = 0.1f; // Time (in seconds) to buffer the jump input after hitting the ground
