@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollisionController : MonoBehaviour
 {
-    public float pushPower = 2.0f;
+    public float pushPower = 2.5f;
     // Let's you change the color of an object upon collision
     public bool changeColor;
     public Color myColor;
