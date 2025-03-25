@@ -5,42 +5,6 @@ using UnityEngine;
 public class CollisionController : MonoBehaviour
 {
     public float pushPower = 2.5f;
-    // Let's you change the color of an object upon collision
-    public bool changeColor;
-    public Color myColor;
-
-    // States of GameObjects to destroy them upon collision
-    public bool destroyEnemy;
-    public bool destroyCollectibles;
-
-    // Allows you to add an audio file that's played on collision
-    public AudioClip collisionAudio;
-    private AudioSource audioSource;
-    private void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    void OnCollisionEnter(Collision other)
-    {
-        if (changeColor)
-        {
-            gameObject.GetComponent<Renderer>().material.color = myColor;
-        }
-        if (audioSource != null && !audioSource.isPlaying)
-        {
-            audioSource.PlayOneShot(collisionAudio, 0.5F);
-        }
-        if (destroyEnemy && other.gameObject.tag == "Enemy" || destroyCollectibles && other.gameObject.tag == "Collectible")
-        {
-            Destroy(other.gameObject);
-        }
-    }
     // only for GameObjects with a character controller applied
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
@@ -62,15 +26,6 @@ public class CollisionController : MonoBehaviour
         if (hit.gameObject.tag == "Object"&& Input.GetMouseButton(0))
         {
             body.velocity = pushDir * pushPower;
-        }
-        if (audioSource != null && !audioSource.isPlaying)
-        {
-            audioSource.PlayOneShot(collisionAudio, 0.5F);
-        }
-
-        if (destroyEnemy == true && hit.gameObject.tag == "Enemy" || destroyCollectibles == true && hit.gameObject.tag == "Collectible")
-        {
-            Destroy(hit.gameObject);
         }
     }
 }
