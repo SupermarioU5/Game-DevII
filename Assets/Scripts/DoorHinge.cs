@@ -4,9 +4,10 @@ public class DoorRotate : MonoBehaviour
 {
     public float openAngle = 90f; // The angle to rotate the door to open (in degrees)
     public float rotationSpeed = 2f; // Speed at which the door rotates
-    //public TKeyCollect Tkey;
+    public TKeyCollecter Tkey;
 
     public bool isOpening = false; // To track if the door is opening
+    private bool keyGet;
     private Quaternion closedRotation; // The initial rotation of the door
     private Quaternion openRotation; // The target rotation of the door
 
@@ -18,6 +19,10 @@ public class DoorRotate : MonoBehaviour
 
     void Update()
     {
+        if (Tkey.triangleKeyGet)
+        {
+            keyGet = true;
+        }
         // If the door is opening
         if (isOpening)
         {
@@ -32,7 +37,7 @@ public class DoorRotate : MonoBehaviour
     // Method to trigger the door to open
     public void OpenDoor()
     {
-        if (!isOpening) //&& Tkey.triangleKeyCollected
+        if (!isOpening && keyGet)
         {
             isOpening = true;
         }
