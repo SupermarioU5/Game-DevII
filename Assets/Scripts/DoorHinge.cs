@@ -32,7 +32,7 @@ public class DoorRotate : MonoBehaviour
     // Method to trigger the door to open
     public void OpenDoor()
     {
-        if (!isOpening)
+        if (!isOpening) //&& Tkey.triangleKeyCollected
         {
             isOpening = true;
         }

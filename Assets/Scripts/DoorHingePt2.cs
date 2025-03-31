@@ -9,6 +9,7 @@ public class DoorHingeP2 : MonoBehaviour
     public float rotationSpeed = 2f; // Speed at which the door rotates
     public DoorRotate og;
     public GameObject beyond;
+    public GameObject locks;
 
     private bool opening = false; // To track if the door is opening
     private Quaternion closedRotation; // The initial rotation of the door
@@ -25,6 +26,7 @@ public class DoorHingeP2 : MonoBehaviour
         // If the door is opening
         if (opening)
         {
+            Destroy(locks);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, openRotation, rotationSpeed * Time.deltaTime);
 
             if (Quaternion.Angle(transform.rotation, openRotation) < 1f)
