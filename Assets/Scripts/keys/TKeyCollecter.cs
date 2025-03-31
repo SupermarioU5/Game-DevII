@@ -12,6 +12,15 @@ public class TKeyCollecter : MonoBehaviour
     {
         triangleKeySprite.SetActive(false);
     }
+    private void Update()
+    {
+        if(Input.GetKeyUp(KeyCode.T))
+        {
+            triangleKeySprite.SetActive(true);
+            Destroy(triangleKey);
+            triangleKeyGet = true;
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
