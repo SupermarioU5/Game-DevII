@@ -12,14 +12,12 @@ public class ResetButton : MonoBehaviour
     void Start()
     {
         back = box.transform.position;
-        Debug.Log(back);
     }
 
     // Update is called once per frame
     void Update()
     {
         inTrigger = rangedetec.trigger;
-        Debug.Log(inTrigger);
         if (inTrigger && Input.GetKeyDown("e")) 
         {
             box.transform.position=back;
