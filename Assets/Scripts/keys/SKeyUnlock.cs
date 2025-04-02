@@ -12,6 +12,8 @@ public class SKeyUnlock : MonoBehaviour
     public Transform startPos;
     private bool touched;
     public Material mat1;
+    public AudioSource open;
+    private bool played;
     // key stuff
     public SKeyCollecter keys;
     private bool keyGet;
@@ -28,6 +30,11 @@ public class SKeyUnlock : MonoBehaviour
         }
         if (touched)
         {
+            if (!played)
+            {
+                open.PlayOneShot(open.clip);
+                played = true;
+            }
             door.transform.position = Vector3.Lerp(door.transform.position, new Vector3(door.transform.position.x, openHeight, door.transform.position.z), Time.deltaTime * speed);
         }
     }

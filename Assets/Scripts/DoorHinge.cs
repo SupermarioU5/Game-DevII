@@ -7,6 +7,7 @@ public class DoorRotate : MonoBehaviour
     public TKeyCollecter Tkey;
     public AudioSource doorOpen;
 
+    private bool played;
     public bool isOpening = false; // To track if the door is opening
     private bool keyGet;
     private Quaternion closedRotation; // The initial rotation of the door
@@ -27,9 +28,10 @@ public class DoorRotate : MonoBehaviour
         // If the door is opening
         if (isOpening)
         {
-            if (!doorOpen.isPlaying)
+            if (!doorOpen.isPlaying&&!played)
             {
                 doorOpen.PlayOneShot(doorOpen.clip);
+                played = true;
             }
             transform.rotation = Quaternion.RotateTowards(transform.rotation, openRotation, rotationSpeed * Time.deltaTime);
 

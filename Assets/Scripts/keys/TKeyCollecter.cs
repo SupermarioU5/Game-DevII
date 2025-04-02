@@ -7,6 +7,7 @@ public class TKeyCollecter : MonoBehaviour
     public GameObject triangleKeySprite;
     public GameObject triangleKey;
     public bool triangleKeyGet;
+    public AudioSource collect;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,7 @@ public class TKeyCollecter : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            collect.PlayOneShot(collect.clip);
             triangleKeySprite.SetActive(true);
             Destroy(triangleKey);
             triangleKeyGet = true;
