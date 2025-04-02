@@ -5,6 +5,7 @@ public class DoorRotate : MonoBehaviour
     public float openAngle = 90f; // The angle to rotate the door to open (in degrees)
     public float rotationSpeed = 2f; // Speed at which the door rotates
     public TKeyCollecter Tkey;
+    public AudioSource doorOpen;
 
     public bool isOpening = false; // To track if the door is opening
     private bool keyGet;
@@ -26,6 +27,7 @@ public class DoorRotate : MonoBehaviour
         // If the door is opening
         if (isOpening)
         {
+            doorOpen.Play();
             transform.rotation = Quaternion.RotateTowards(transform.rotation, openRotation, rotationSpeed * Time.deltaTime);
 
             if (Quaternion.Angle(transform.rotation, openRotation) < 1f)

@@ -182,7 +182,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 958d7b762f28c0f4d8fb6e2db4a5d0c8, type: 2}
+  - {fileID: 2100000, guid: c3782a28b396d9540a781898f34f6c0c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2281,7 +2281,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e064aec798509564a927640160b5077f, type: 2}
+  - {fileID: 2100000, guid: 5f5a9aa84e6b0b849a58d897f9c1db80, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2505,7 +2505,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e064aec798509564a927640160b5077f, type: 2}
+  - {fileID: 2100000, guid: 5f5a9aa84e6b0b849a58d897f9c1db80, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3614,7 +3614,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cdb71d3704504214c811b3e192861b1f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7cbe5a1f2d58e89409c3315ecc86da58, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4120,7 +4120,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cdb71d3704504214c811b3e192861b1f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7cbe5a1f2d58e89409c3315ecc86da58, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7592,7 +7592,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 958d7b762f28c0f4d8fb6e2db4a5d0c8, type: 2}
+  - {fileID: 2100000, guid: c3782a28b396d9540a781898f34f6c0c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7898,7 +7898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cdb71d3704504214c811b3e192861b1f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7cbe5a1f2d58e89409c3315ecc86da58, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10097,6 +10097,7 @@ MonoBehaviour:
   openAngle: 90
   rotationSpeed: 2
   Tkey: {fileID: 799333527306619448}
+  doorOpen: {fileID: 2018518151}
   isOpening: 0
 --- !u!65 &2018518150
 BoxCollider:
@@ -10139,7 +10140,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1.469101
+  MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -11308,7 +11309,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e064aec798509564a927640160b5077f, type: 2}
+  - {fileID: 2100000, guid: 5f5a9aa84e6b0b849a58d897f9c1db80, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11596,7 +11597,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 958d7b762f28c0f4d8fb6e2db4a5d0c8, type: 2}
+  - {fileID: 2100000, guid: c3782a28b396d9540a781898f34f6c0c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
