@@ -27,7 +27,10 @@ public class DoorRotate : MonoBehaviour
         // If the door is opening
         if (isOpening)
         {
-            doorOpen.Play();
+            if (!doorOpen.isPlaying)
+            {
+                doorOpen.PlayOneShot(doorOpen.clip);
+            }
             transform.rotation = Quaternion.RotateTowards(transform.rotation, openRotation, rotationSpeed * Time.deltaTime);
 
             if (Quaternion.Angle(transform.rotation, openRotation) < 1f)
