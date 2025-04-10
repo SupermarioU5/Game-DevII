@@ -15,7 +15,7 @@ public class Respawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("r")|| thePlayer.transform.position.y<-3)
+        if (thePlayer.transform.position.y<-3)
         {
             thePlayer.transform.position = spawn.transform.position;
         }
