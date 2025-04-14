@@ -21,14 +21,6 @@ public class StartMenu : MonoBehaviour
     }
     public void QuitGame()
     {
-        if (UnityEditor.EditorApplication.isPlaying)
-        {
-            UnityEditor.EditorApplication.isPlaying = false; // Stop the game in the Unity editor
-        }
-        else
-        {
-            Application.Quit(); // Quit the application when built
-        }
-            
+        Application.Quit(); // Quit the application when built
     }
 }
