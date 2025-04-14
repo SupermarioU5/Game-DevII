@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TKeyCollecter : MonoBehaviour
@@ -12,15 +10,6 @@ public class TKeyCollecter : MonoBehaviour
     void Start()
     {
         triangleKeySprite.SetActive(false);
-    }
-    private void Update()
-    {
-        if(Input.GetKeyUp(KeyCode.T))
-        {
-            triangleKeySprite.SetActive(true);
-            Destroy(triangleKey);
-            triangleKeyGet = true;
-        }
     }
     private void OnTriggerEnter(Collider other)
     {
