@@ -966,7 +966,7 @@ GameObject:
   - component: {fileID: 209065337}
   - component: {fileID: 209065336}
   - component: {fileID: 209065340}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'THE GATE (pt: 1)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3796,7 +3796,7 @@ GameObject:
   - component: {fileID: 692909912}
   m_Layer: 0
   m_Name: THE GREAT BEYOND
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7378,7 +7378,7 @@ GameObject:
   - component: {fileID: 1454204129}
   m_Layer: 0
   m_Name: door hinge (2)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7756,7 +7756,7 @@ GameObject:
   - component: {fileID: 1501674905}
   - component: {fileID: 1501674904}
   - component: {fileID: 1501674903}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: the beyond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8810,7 +8810,7 @@ GameObject:
   - component: {fileID: 1672598916}
   - component: {fileID: 1672598915}
   - component: {fileID: 1672598917}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: THE GATE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10613,7 +10613,7 @@ GameObject:
   - component: {fileID: 2018518149}
   m_Layer: 0
   m_Name: door hinge (1)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
