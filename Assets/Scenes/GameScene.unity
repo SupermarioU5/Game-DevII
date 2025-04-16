@@ -1032,7 +1032,7 @@ Transform:
   m_GameObject: {fileID: 209065334}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.57}
+  m_LocalPosition: {x: 0, y: 0, z: 7.97}
   m_LocalScale: {x: 0.11875726, y: 11.162762, z: 5.17}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7494,7 +7494,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -7844,7 +7844,7 @@ Transform:
   m_GameObject: {fileID: 1501674902}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19000244, y: -2.67, z: 1.3}
+  m_LocalPosition: {x: -0.19000244, y: -2.67, z: 1.76}
   m_LocalScale: {x: 1, y: 11.652, z: 12.741752}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10628,7 +10628,7 @@ Transform:
   m_GameObject: {fileID: 2018518146}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -135.54, y: 7.49, z: -87.43}
+  m_LocalPosition: {x: -135.54, y: 7.49, z: -92.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

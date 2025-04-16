@@ -5,6 +5,10 @@ public class NewBehaviourScript : MonoBehaviour
 {
     public void Menu()
     {
-        SceneManager.LoadScene("MainMenu");
+        if (SpeedrunTimer.instance != null)
+        {
+            Destroy(SpeedrunTimer.instance.gameObject);
+        }
+            SceneManager.LoadScene("MainMenu");
     }
 }
