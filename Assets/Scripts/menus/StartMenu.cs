@@ -6,9 +6,10 @@ public class StartMenu : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject mainMenuUI;
+    public GameObject leaderboardUI;
     void Start()
     {
-         
+         leaderboardUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,5 +42,15 @@ public class StartMenu : MonoBehaviour
 
         // Unsubscribe to prevent duplicate calls
         SceneManager.sceneLoaded -= OnGameSceneLoaded;
+    }
+    public void LeaderboardOpen()
+    {
+        mainMenuUI.SetActive(false);
+        leaderboardUI.SetActive(true);
+    }
+    public void LeaderboardClose()
+    {
+        mainMenuUI.SetActive(true);
+        leaderboardUI.SetActive(false);
     }
 }
