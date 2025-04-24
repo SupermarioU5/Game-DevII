@@ -11,6 +11,7 @@ public class TKeyCollecter : MonoBehaviour
     {
         triangleKeySprite.SetActive(false);
     }
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
