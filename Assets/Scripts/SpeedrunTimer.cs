@@ -48,7 +48,6 @@ public class SpeedrunTimer : MonoBehaviour
         startTime = Time.time - pausedTime;
         pausedTime = 0;
     }
-
     void Update()
     {
         if (isRunning)

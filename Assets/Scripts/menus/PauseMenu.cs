@@ -53,6 +53,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void Menu()
     {
+        Destroy(SpeedrunTimer.instance.gameObject);
         SceneManager.LoadScene("MainMenu");
     }
 }
